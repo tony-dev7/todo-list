@@ -52,29 +52,3 @@ function salvar() {
 
   localStorage.setItem("tarefas", JSON.stringify(tarefas));
 }
-function criarTarefa(texto) {
-  let item = document.createElement("li");
-
-  // 👇 animação ao aparecer
-  item.style.animation = "aparecer 0.3s ease";
-
-  let span = document.createElement("span");
-  span.innerText = texto;
-
-  span.onclick = function () {
-    span.style.textDecoration = "line-through";
-    salvar();
-  };
-
-  let botao = document.createElement("button");
-  botao.innerText = "X";
-
-  botao.onclick = function () {
-    item.remove();
-    salvar();
-  };
-
-  item.appendChild(span);
-  item.appendChild(botao);
-  lista.appendChild(item);
-}

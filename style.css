@@ -52,24 +52,7 @@ ul {
   margin-top: 20px;
 }
 
-li {
-  background: #f4f4f4;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li span {
-  cursor: pointer;
-}
-
-li button {
-  background: red;
-}
-/* animação de entrada */
+/* 🔥 animação */
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -82,5 +65,23 @@ li button {
 }
 
 li {
+  background: #f4f4f4;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   animation: aparecer 0.3s ease;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li button {
+  background: red;
+  border-radius: 6px;
+  padding: 5px 8px;
 }
