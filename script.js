@@ -37,7 +37,11 @@ function criarTarefa(texto) {
   botao.innerText = "X";
 
   botao.onclick = function () {
-    item.remove();
+    item.classList.add("remover");
+    
+    setTimeout(() => {
+      item.remove();
+    }, 300);
     salvar();
   };
 

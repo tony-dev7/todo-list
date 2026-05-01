@@ -87,3 +87,17 @@ li button {
     transform: translateY(0);
   }
 }
+.remover {
+  animation: sumir 0.3s ease forwards;
+}
+
+@keyframes sumir {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
