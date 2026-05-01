@@ -101,3 +101,39 @@ li button {
     transform: translateX(50px);
   }
 }
+.feito {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* animação de entrada */
+.animar {
+  animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* animação ao deletar */
+.remover {
+  animation: sumir 0.3s ease forwards;
+}
+
+@keyframes sumir {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
