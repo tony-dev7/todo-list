@@ -67,9 +67,17 @@ li span {
 }
 
 li button {
-  background: red;
+  background: #ff4d4d;
+  border: none;
   border-radius: 6px;
   padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+li button:hover {
+  background: #e60000;
+  transform: scale(1.1);
 }
 
 /* 🔥 animação */
@@ -136,4 +144,15 @@ li button {
     opacity: 0;
     transform: translateX(50px);
   }
+}
+ li {
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+ input:focus {
+  outline: none;
+  border: 2px solid #667eea;
 }

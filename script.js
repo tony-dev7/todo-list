@@ -41,7 +41,7 @@ function criarTarefa(texto) {
   };
 
   let botao = document.createElement("button");
-  botao.innerText = "X";
+  botao.innerHTML = "🗑️";
 
   // animação ao deletar
   botao.onclick = function () {
