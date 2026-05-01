@@ -22,6 +22,9 @@ function adicionar() {
 function criarTarefa(texto) {
   let item = document.createElement("li");
 
+  // 🔥 adiciona animação
+  item.classList.add("animar");
+
   let span = document.createElement("span");
   span.innerText = texto;
 

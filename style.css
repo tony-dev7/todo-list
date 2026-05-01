@@ -52,18 +52,6 @@ ul {
   margin-top: 20px;
 }
 
-/* 🔥 animação */
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 li {
   background: #f4f4f4;
   margin: 8px 0;
@@ -72,8 +60,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  animation: aparecer 0.3s ease;
 }
 
 li span {
@@ -84,4 +70,20 @@ li button {
   background: red;
   border-radius: 6px;
   padding: 5px 8px;
+}
+
+/* 🔥 animação */
+.animar {
+  animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
